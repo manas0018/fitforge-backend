@@ -4,9 +4,12 @@ app.use(express.json());
 
 // Import Routes
 const routes = require("./routes");
+const swaggerUi = require("swagger-ui-express");
+const swaggerSpec = require("./config/swagger");
 
 // API Routes
 app.use("/api/v1", routes);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.get("/", (req, res) => {
   res.send(`
