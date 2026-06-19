@@ -1,10 +1,10 @@
-const Workout = require("../models/Workout.model");
+const Workout = require("../models/workout.model");
 const asyncHandler = require("../utils/asyncHandler");
 const ApiError = require("../utils/ApiError");
 const ApiResponse = require("../utils/ApiResponse");
 
 // @desc    Create a new workout entry
-// @route   POST /api/v1/workouts
+// @route   POST /api/v1/workoutss
 // @access  Private
 const createWorkout = asyncHandler(async (req, res) => {
   const { exerciseName, sets, reps, weight, date } = req.body;

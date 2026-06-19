@@ -1,4 +1,4 @@
-const Workout = require("../models/Workout.model");
+const Workout = require("../models/workout.model");
 const BodyMetric = require("../models/BodyMetric.model");
 const Goal = require("../models/Goal.model");
 
