@@ -28,6 +28,18 @@ const router = express.Router();
  */
 
 router.post('/register', registerUser);
+/**
+ * @swagger
+ * /api/v1/auth/login:
+ *   post:
+ *     summary: Login user
+ *     tags:
+ *       - Authentication
+ *     responses:
+ *       200:
+ *         description: Login successful
+ */
 router.post('/login', loginUser);
+
 
 module.exports = router;
